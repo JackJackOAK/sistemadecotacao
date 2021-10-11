@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.container {
+    /*width: 100%;*/
+    min-height: 5vh;
+    margin-bottom: 1rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 150px;
+    justify-content: center;
+    background-color: #1940D8;
+    -webkit-box-shadow: 5px 5px 15px -3px #000000; 
+    box-shadow: 5px 5px 15px -3px #000000;
+}
+
+.transportadores {
+    min-width: 200px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 550;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.transportador {
+    width: 100%;
+    line-height: 1.5rem;
+}
+
+.valor {
+    min-width: 200px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 550;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.prazo {
+    min-width: 200px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 550;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.km {
+    min-width: 200px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 550;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+#add {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #FAFAFA;
+    transition: .3s;
+}
+
+#add:hover {
+    cursor: pointer;
+    background-color: #333;
+    color: #FAFAFA;
+}
+
+.valor input,
+.prazo input,
+.km input {
+    width: 98%;
+    line-height: 1.5rem;
+}
+
+table {
+    border:  3px solid #1940D8;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 15px -3px #000000; 
+    box-shadow: 5px 5px 15px -3px #000000;
+}
+
+.dados-th th {
+    color: #fff;
+    background-color: #1940D8;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.data-transp, .data-cot {
+    border: 1px solid black;
+    text-align: center;
+    padding: 3px;
+}
+
+.btabela {
+    display: flex;
+    justify-content: center;
+}
+
+.btnsalvado {
+    height: 58px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #FAFAFA;
+    transition: .3s;
+}
+
+.btnsalvado:hover {
+    cursor: pointer;
+    background-color: #333;
+    color: #FAFAFA;
+}
+
+#reset {
+    display: none;
+    width: 100%;
+    cursor: pointer;    
+}
+
+#reset a {
+    text-decoration: none;
+}
+

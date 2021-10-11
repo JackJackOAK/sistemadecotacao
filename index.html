@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="transportadores">
+                        <label for="prestador">Transportador</label>
+                        <br />
+                        <!--<input type="select" id="prestador" placeholder="Digite o Prestador">-->
+                        <select name="seclect-transp" id="transportador">
+                            <option value="">-- Selecione --</option>
+                            <option value="FTA TRANSPORTES">FTA TRANSPORTES</option>
+                            <option value="JPAULINO TRANSPORTES">JPAULINO TRANSPORTES</option>
+                            <option value="MONÇÕES TRANSPORTES">MONÇÕES TRANSPORTES</option>
+                            <option value="PGL TRANSPORTES">PGL TRANSPORTES</option>
+                            <option value="RC GUIMARÃES">RC GUIMARÃES</option>
+                            <option value="SOS AUTOSOCORRO">SOS AUTOSOCORRO</option>
+                            <option value="TRANSGABRIEL">TRANSGABRIEL</option>
+                            <option value="TRANSWAGNER">TRANSWAGNER</option>
+                        </select>
+                    </div>
+                    <div class="valor">
+                        <label for="valor">Valor</label>
+                        <br />
+                        <input type="text" id="valor" placeholder="Digite o valor">
+                    </div>
+                    <div class="prazo">
+                        <label for="prazo">Prazo</label>
+                        <br />
+                        <input type="text" id="prazo" placeholder="Digite o prazo">
+                    </div>
+                    <div class="km">
+                        <label for="km">KM</label>
+                        <br />
+                        <input type="text" id="km" placeholder="Digite o km">
+                    </div>
+                        <input id="add" type="submit" value="Adicionar" onclick="add()">
+                </div>
+            </section>
+            <section class="btabela">
+                <table cellspacing="1" cellpadding="3">
+                    <tbody id="table-data">
+                        <tr>
+                            <td class="data-transp">Local Origem</td>
+                            <td class="data-transp"><input id="txtOrigem" type="text"></td>
+                            <td class="data-transp">Local Destino</td>
+                            <td class="data-transp">
+                                <select name="" id="txtDestino">
+                                    <option value="">-- Select --</option>
+                                    <option value="BETIM - MG">BETIM - MG</option>
+                                    <option value="CANOAS - RS">CANOAS - RS</option>
+                                    <option value="CURITIBA - PR">CURITIBA - PR</option>
+                                    <option value="EMBÚ DAS ARTES - SP">EMBÚ DAS ARTES - SP</option>
+                                    <option value="ITAQUAQUECETUBA - SP">ITAQUAQUECETUBA - SP</option>
+                                    <option value="OSASCO - SP">OSASCO - SP</option>
+                                    <option value="PIRAPORA - SP">PIRAPORA - SP</option>
+                                    <option value="RECIFE - SP">RECIFE - SP</option>
+                                    <option value="SÃO PAULO - SP">SÃO PAULO - SP</option>
+                                    <option value="FORTALEZA - CE">FORTALEZA - CE</option>
+                                    <option value="GOIÂNIA - GO">GOIÂNIA - GO</option>
+                                    <option value="LEILÃO PORTO SEGUROS - SP">LEILÃO PORTO SEGUROS - SP</option>
+                                    <option value="MANAUS - AM">MANAUS - AM</option>
+                                    <option value="RIBEIRÃO PRESTO - SP">RIBEIRÃO PRESTO - SP</option>
+                                </select>
+                            </td>
+                            <td rowspan="2">
+                                <button class="btnsalvado" onclick="addsalvado()">Adicionar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="data-transp">Veículo</td>
+                            <td class="data-transp"><input id="veiculo" type="text"></td>
+                            <td class="data-transp">Placa</td>
+                            <td class="data-transp"><input id="placa" type="text"></td>
+                        </tr>
+                        <tr id="dados-salvado">
+
+                        </tr>
+                        <tr class="dados-th">
+                            <th>TRANSPORTADOR</th>
+                            <th>VALOR</th>
+                            <th>KM</th>
+                            <th>PRAZO</th>
+                            <th>$/KM</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="reset"><a href="">RESET</a></button>
+            </section>
+        </main>
+        <script src="logica.js"></script>
+    </body>
+</html>
