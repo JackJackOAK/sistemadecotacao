@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 11vh;
+    padding: 5px 15px;
+    background-color: #1940D8;
+    -webkit-box-shadow: 5px 5px 7px 2px rgba(0,0,0,0.23); 
+    box-shadow: 5px 5px 7px 2px rgba(0,0,0,0.23);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.caixa-padrao {
+    padding: 3px;
+    margin: 5px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.caixa-padrao input {
+    padding: 2px;
+    width: 150px;
+    line-height: 1.3rem;
+}
+
+.origem, .destino, .salvado  {
+    background-color: #1940D8;
+}
+
+.inputArea {
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 3px;
+    cursor: pointer;
+}
+
+.preVisual {
+    margin: 1rem;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 7px 2px rgba(0,0,0,0.23); 
+    box-shadow: 5px 5px 7px 2px rgba(0,0,0,0.23);
+}
+
+.preVisual table {
+    border-radius: 5px;
+    border: 2px solid #1940D8;
+}
+
+table, table th, table td {
+    border: 2px solid #ccc;
+    border-collapse: separate;
+    padding: 4px;
+}
+
+table th {
+    background-color: #1940D8;
+    color: #fff;
+}
+
+#tableMaked {
+    border-radius: 5px;
+    border: 2px solid #1940D8;
+    -webkit-box-shadow: 5px 5px 7px 2px rgba(0,0,0,0.23); 
+    box-shadow: 5px 5px 7px 2px rgba(0,0,0,0.23);
+}
+
+.trData {
+    text-align: center;
+}
+
+#btnReset {
+    display: none;
+}
