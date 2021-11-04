@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COTAÇÃO</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="logica.js"></script>
+
+    </head>
+    <body onload="makeTable()">
+        <header class="topo">
+            <div class="container">
+                <div class="select-transp caixa-padrao">
+                    <label for="transport">TRANSPORTADOR</label>
+                    <select name="" id="transport">
+                        <option value=""> -- SELECT -- </option>
+                        <option value="PRIMEIRO">PRIMEIRO</option>
+                        <option value="SEGUNDO">SEGUNDO</option>
+                        <option value="TERCEIRO">TERCEIRO</option>
+                        <option value="QUARTO">QUARTO</option>
+                    </select>
+                </div>
+                <div class="valor caixa-padrao">
+                    <label for="valor">VALOR</label>
+                    <input id="valor" type="text" placeholder="Digite o valor">
+                </div>
+                <div class="prazo caixa-padrao">
+                    <label for="prazo">PRAZO</label>
+                    <input id="prazo" type="text" placeholder="Digite o prazo">
+                </div>
+                <div class="km caixa-padrao">
+                    <label for="km">KM</label>
+                    <input id="km" type="text" placeholder="Digite o km">
+                </div>
+                <button class="btn" onclick="cadastrarCotacao()">ADICIONAR</button>
+                <button class="btn" onclick="reset()">RESET</button>
+            </div>
+        </header>
+        <section class="container inputArea">
+            <div class="origem caixa-padrao">
+                <label for="txtOrigem">ORIGEM</label>
+                <input id="txtOrigem" type="text" placeholder="Digite a origem">
+            </div>
+            <div class="destino caixa-padrao">
+                <label for="txtDestino">DESTINO</label>
+                <input id="txtDestino" type="text" placeholder="Digite o destino">
+            </div>
+            <div class="salvado caixa-padrao">
+                <label for="dadosSalvado">VEÍCULO</label>
+                <input id="dadosSalvado" type="text" placeholder="Digite o modelo">
+                <input id="placa" type="text" placeholder="Digite a placa">
+            </div>
+            <button class="btn" onclick="insertLocation()">GERAR TABELA</button>
+        </section>
+        <section class="container">
+            <div>
+                <table id="tableM">
+                    <thead>
+                        <th>TRANSPORTADOR</th>
+                        <th>VALOR</th>
+                        <th>PRAZO</th>
+                        <th>KM</th>
+                        <th>R$/KM</th>
+                    </thead>
+                    <tbody id="tableMaked">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </body>
+</html>
